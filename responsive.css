@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.section {
+    width: 100%;
+    padding: 100px 20px; /* Adjust padding to ensure content is not overlapped */
+    text-align: center;
+}
+
+/* Navigation Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(158, 200, 218);
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+    font-size: 16px; /* Reduce font size to prevent overflow */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+nav ul li {
+    padding: 5px;
+    margin-right: 5px; /* Added margin to provide spacing */
+}
+
+nav ul li:last-child {
+    margin-right: 25px; /* Remove margin from the last item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ccc;
+}
+
+/* Section Styles */
+#home {
+    height: 70vh;
+    background-color: rgb(168, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#about {
+    background-color: rgb(158, 200, 218);
+    height:70vh;
+}
+
+.logo-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto; /* Center the logo */
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+#skills {
+    background-color: rgb(88, 128, 137);
+    height:65vh;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 3%;
+    
+}
+
+.skill {
+    font-size: x-large;
+    text-align: center;
+}
+
+.circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #c96666;
+}
+
+#my_works {
+    background-color: rgb(168, 216, 216);
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.work-item {
+    background-color: #616c96;
+    border: 1px solid #ac9696;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.work-item h3 {
+    margin-bottom: 10px;
+}
+
+#education {
+    background-color: rgb(108, 156, 171);
+}
+
+.education-content {
+    padding: 20px;
+}
+
+.education-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.education-content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+#gallery {
+    background-color: rgb(62, 114, 114);
+    height: 70vh;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#contact {
+    background-color: rgb(168, 216, 216);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #218838;
+}
+button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgb(158, 200, 218);
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-contact {
+    margin-top: 20px;
+}
+
+footer .footer-contact h2 {
+    margin-bottom: 10px;
+}
+
+footer .footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-contact li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo h1 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-right: 0; /* Reset margin for vertical layout */
+    }
+
+    nav ul li a {
+        padding: 5px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .logo-container {
+        margin: 20px auto; /* Center the logo in the about section */
+    }
+}
